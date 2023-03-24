@@ -1,0 +1,105 @@
+
+/* Stylesheet */
+/* 26/11/18 Jonathan Alderson sc17j3a */
+
+/* Nice white     #EBF2FA
+   Pale Green     #A9FDAC
+   Dark Green     #68A357
+*/
+QApplication
+{
+  font-family: Arial;
+  font-size: 24px;
+  font-weight: Normal;
+}
+
+QWidget
+{
+    background-color: qlineargradient(x1: 0.5, y1: 0, x2: 0.5, y2: 1,stop: 0 #76b852 ,stop: 1 #68A357);
+    /*background-color: qlineargradient(x1: 0.5, y1: 0, x2: 0.5, y2: 1,stop: 0 #A9FDAC ,stop: 1 #68A357);*/
+    /*background-color: #A9FDAC;*/
+    font-family: Helvetica;
+    font-size: 20px;
+    font-weight: Bold;
+
+}
+
+#label
+{
+    background-color: #baf39a;
+    font-family: Helvetica;
+    font-size: 24px;
+    font-weight: Bold;
+}
+
+#welcomepage
+{
+    background-color: #baf39a;
+    font-family: Helvetica;
+    font-size: 96px;
+    font-weight: Bold;
+}
+
+#table
+{
+    background-color: #baf39a;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: Bold;
+}
+
+HelloWorldLabel::QWidget
+{
+  background-color: #EBF2FA;
+}
+
+QLabel
+{
+  background-color: #baf39a;
+}
+
+QLineEdit
+{
+  background-color: #EBF2FA;
+}
+
+QTabBar{
+
+}
+QTabBar::tab {
+
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    border-bottom: 5px solid #000000;
+    background-color: #EBF2FA;
+
+    /*height: 30px;*/
+    min-width: 8ex;
+    padding: 5px;
+
+}
+
+
+
+
+/*QTabWidget {
+    background-color: #EBF2FA;
+    height: 150px;
+}*/
+
+
+/*QTabWidget::tab-bar:top {
+    top: 20px;
+
+}*/
+
+/*QTabWidget::tab-bar { alignment: center; }*/
+
+QTabBar::tab:selected {
+    background: #baf39a;
+    border-bottom: 5px solid #baf39a;
+}
+
+QTabBar::tab:!selected {
+    background: #8bd064;
+}
